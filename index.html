@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <!-- slick slider -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />   
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>NFT</title>
+</head>
+
+<body id="body">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <a class="header__logo logo" href="#">
+              <img src="images/Logo.svg" alt="">
+            </a>
+            <div class="search">
+              <button class="search__button"></button>
+              <input class="search__input" type="search" placeholder="Search items and collections">
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Collections</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Feature</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">FAQ</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a class="header__nav-link header__nav-link--gradient gradient" href="#">Select Wallet</a>
+                  </li>
+                </ul>
+            </nav>
+
+            <div class="header__mob-btn">
+              <form class="search__form">
+                <input type="search" name="search" id="search" class="search__input" placeholder="Search">
+                <label for="search" class="search__label"></label>
+              </form>
+              <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+
+      <!-- creative -->
+      <section class="main__creative creative">
+        <div class="container">
+          <div class="creative__inner">
+            <div class="creative__nft">
+              <div class="creative__heading">
+                <h1 class="creative__title">Create, Sell & Collect Your Own Creative NFT</h1>
+                <p class="creative__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit.
+                </p>
+              </div>
+              <div class="creative__btn-box">
+                <a class="creative__btn-gradient gradient" href="#">Explore Now</a>
+                <a class="creative__btn" href="#">Sell NFT</a>
+              </div>
+              <ul class="creative__row">
+                <li class="creative__row-item"><span>37k+</span>Artworks</li>
+                <li class="creative__row-item"><span>20k+</span>Artists</li>
+                <li class="creative__row-item"><span>99k+</span>Aucations</li>
+              </ul>
+            </div>
+            <div class="creative__image">
+              <img class="creative__img" src="images/heroimage.png" alt="">
+            </div>
+          </div>
+          <div class="company">
+            <img class="company__logo"  src="./images/binance.svg" alt="">
+            <img class="company__logo"  src="./images/ethereum.svg" alt="">
+            <img class="company__logo"  src="./images/blockchain.svg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="main__about about">
+        <div class="container">
+          <div class="about__inner">
+            <div class="about__header heading">
+              <h2 class="about__header-title">About Us</h2>
+              <p class="about__header-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="about__body">
+              <div class="about__img-box">
+                <img class="about__img" src="./images/about.png" alt="">
+              </div>
+              <div class="about__body-desc">
+                <h2 class="about__desc-title">
+                  Get Popular NFT
+                </h2>
+                <p class="about__desc-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. 
+                </p>
+                <a class="about__desc-btn-gradient gradient" href="#">
+                  Show more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Artworks -->
+      <section class="main__artworks artworks">
+        <div class="container">
+          <div class="artworks__inner">
+            <div class="artworks__header heading">
+              <h2 class="about__header-title">Featured Artworks</h2>
+              <p class="about__header-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="swiper" data-mobile="false">
+              <div class="swiper__wrapper">
+                <div class="swiper__slide slide">
+                  <div class="slide__wrapper">
+                    <div class="artworks__card-item">
+                      <div class="artworks__item-image">
+                        <img class="artworks__item-ima" src="./images/collection1.png" alt="">
+                      </div>
+                      <div class="artworks__card-info">
+                        <div class="artworks__card-user">
+                          <p class="card__name">@Johny</p>
+                          <p class="card__author">Yellow Painting</p>
+                        </div>
+                        <p class="card__price">Current Bid<span>0.005 ETH</span></p>
+                      </div>
+                      <a class="artworks__card-btn gradient" href="">Place a bid</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper__slide slide">
+                  <div class="classification-slide__wrapper">
+                    <div class="artworks__card-item">
+                      <div class="artworks__item-image">
+                        <img class="artworks__item-ima" src="./images/collection2.png" alt="">
+                      </div>
+                      <div class="artworks__card-info">
+                        <div class="artworks__card-user">
+                          <p class="card__name">@Johny</p>
+                          <p class="card__author">Yellow Painting</p>
+                        </div>
+                        <p class="card__price">Current Bid<span>0.005 ETH</span></p>
+                      </div>
+                      <a class="artworks__card-btn gradient" href="">Place a bid</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper__slide slide">
+                  <div class="classification-slide__wrapper">
+                    <div class="artworks__card-item">
+                      <div class="artworks__item-image">
+                        <img class="artworks__item-ima" src="./images/collection3.png" alt="">
+                      </div>
+                      <div class="artworks__card-info">
+                        <div class="artworks__card-user">
+                          <p class="card__name">@Johny</p>
+                          <p class="card__author">Yellow Painting</p>
+                        </div>
+                        <p class="card__price">Current Bid<span>0.005 ETH</span></p>
+                      </div>
+                      <a class="artworks__card-btn gradient" href="">Place a bid</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="main__faq faq">
+        <div class="container">
+          <div class="faq__inner">
+            <div class="faq__header heading">
+              <h2 class="about__header-title">Freaquently Asked
+                Question</h2>
+              <p class="about__header-subtitle">Wanna Ask Something?</p>
+            </div>
+            <div class="faq__body">
+              <div class="faq__item">
+                <button class="faq__item-btn">Lorem ipsum ipsum ?</button>
+                  <div class="faq__item-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <button class="faq__item-btn">Lorem ipsum ipsum ?</button>
+                  <div class="faq__item-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <button class="faq__item-btn">Lorem ipsum ipsum ?</button>
+                  <div class="faq__item-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__item-btn">Lorem ipsum ipsum ?</button>
+                  <div class="faq__item-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <button class="faq__item-btn">Lorem ipsum ipsum ?</button>
+                  <div class="faq__item-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <button class="faq__item-btn">Lorem ipsum ipsum ?</button>
+                  <div class="faq__item-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- button -->
+      <div class="container">
+        <div class="baner">
+          <h3 class="baner__title">Get ready to collect our NFT</h3>
+          <a class="baner__link" href="">Get Started</a>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__top-inner">
+            <div class="footer__top-column">
+              <a class="footer__logo logo" href="">
+                <img src="./images/PsychoArt__footer.svg" alt="">
+              </a>
+              <p class="footer__top-text">
+                The best NFT marketplace website in the world and feel your experience in selling or buy our work
+              </p>
+            </div>
+            <div class="footer__top-column">
+              <h3 class="footer__top-title footer__top-title--slide footer__top-title--arrow footer__top-title--arrow-down">
+                About
+              </h3>
+              <ul class="footer__top-list footer__top-list-nested footer__top-list-nested-active">
+                <li class="footer__top-items">
+                  <a class="footer__item-link" href="#">Product</a>
+                </li>
+                <li class="footer__top-items">
+                  <a class="footer__item-link" href="#">Resource</a>
+                </li>
+                <li class="footer__top-items">
+                  <a class="footer__item-link" href="#">Term & Condition</a>
+                </li>
+                <li class="footer__top-items">
+                  <a class="footer__item-link" href="#">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__top-column">
+              <h3 class="footer__top-title">
+                Company
+              </h3>
+              <ul class="footer__top-list">
+                <li class="footer__top-items">
+                  <a class="footer__item-link" href="#">Our Team</a>
+                </li>
+                <li class="footer__top-items">
+                  <a class="footer__item-link" href="#">Partner With Us</a>
+                </li>
+                <li class="footer__top-items">
+                  <a class="footer__item-link" href="#">Privacy & Policy</a>
+                </li>
+                <li class="footer__top-items">
+                  <a class="footer__item-link" href="#">Features</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__top-column">
+              <h3 class="footer__top-title">
+                Contact
+              </h3>
+              <ul class="footer__top-list">
+                <li class="footer__top-items">
+                  <a class="footer__item-link" href="tel:0123456789">+012 3456789</a>
+                </li>
+                <li class="footer__top-items">
+                  <a class="footer__item-link" href="mailto:adorableprogrammer@gmail.com">adorableprogrammer@gmail.com</a>
+                </li>
+              </ul>
+              <ul class="footer__socials">
+                <li class="footer__socials-item">
+                  <a class="footer__socials-link" href="">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M23.8566 6.77443C23.5839 5.74795 22.7807 4.93953 21.7609 4.66518C19.9124 4.16666 12.5 4.16666 12.5 4.16666C12.5 4.16666 5.08767 4.16666 3.2391 4.66518C2.21927 4.93957 1.41606 5.74795 1.14344 6.77443C0.648132 8.63497 0.648132 12.5168 0.648132 12.5168C0.648132 12.5168 0.648132 16.3987 1.14344 18.2592C1.41606 19.2857 2.21927 20.0604 3.2391 20.3348C5.08767 20.8333 12.5 20.8333 12.5 20.8333C12.5 20.8333 19.9123 20.8333 21.7609 20.3348C22.7807 20.0604 23.5839 19.2857 23.8566 18.2592C24.3519 16.3987 24.3519 12.5168 24.3519 12.5168C24.3519 12.5168 24.3519 8.63497 23.8566 6.77443ZM10.0757 16.0413V8.99239L16.271 12.5169L10.0757 16.0413Z" fill="white" fill-opacity="0.5"/>
+                      </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a class="footer__socials-link" href="">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.075 11.875C16.075 12.6375 15.5125 13.2625 14.8 13.2625C14.1 13.2625 13.525 12.6375 13.525 11.875C13.525 11.1125 14.0875 10.4875 14.8 10.4875C15.5125 10.4875 16.075 11.1125 16.075 11.875ZM10.2375 10.4875C9.525 10.4875 8.9625 11.1125 8.9625 11.875C8.9625 12.6375 9.5375 13.2625 10.2375 13.2625C10.95 13.2625 11.5125 12.6375 11.5125 11.875C11.525 11.1125 10.95 10.4875 10.2375 10.4875ZM23.4375 2.575V25C20.2884 22.2171 21.2955 23.1383 17.6375 19.7375L18.3 22.05H4.125C2.7125 22.05 1.5625 20.9 1.5625 19.475V2.575C1.5625 1.15 2.7125 0 4.125 0H20.875C22.2875 0 23.4375 1.15 23.4375 2.575ZM19.875 14.425C19.875 10.4 18.075 7.1375 18.075 7.1375C16.275 5.7875 14.5625 5.825 14.5625 5.825L14.3875 6.025C16.5125 6.675 17.5 7.6125 17.5 7.6125C14.5307 5.98511 11.0428 5.98481 8.1625 7.25C7.7 7.4625 7.425 7.6125 7.425 7.6125C7.425 7.6125 8.4625 6.625 10.7125 5.975L10.5875 5.825C10.5875 5.825 8.875 5.7875 7.075 7.1375C7.075 7.1375 5.275 10.4 5.275 14.425C5.275 14.425 6.325 16.2375 9.0875 16.325C9.0875 16.325 9.55 15.7625 9.925 15.2875C8.3375 14.8125 7.7375 13.8125 7.7375 13.8125C7.92139 13.9412 8.22461 14.1081 8.25 14.125C10.3599 15.3065 13.3568 15.6937 16.05 14.5625C16.4875 14.4 16.975 14.1625 17.4875 13.825C17.4875 13.825 16.8625 14.85 15.225 15.3125C15.6 15.7875 16.05 16.325 16.05 16.325C18.8125 16.2375 19.875 14.425 19.875 14.425Z" fill="white" fill-opacity="0.5"/>
+                      </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a class="footer__socials-link" href="">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.5049 6.88477C9.39941 6.88477 6.89453 9.38965 6.89453 12.4951C6.89453 15.6006 9.39941 18.1055 12.5049 18.1055C15.6104 18.1055 18.1152 15.6006 18.1152 12.4951C18.1152 9.38965 15.6104 6.88477 12.5049 6.88477ZM12.5049 16.1426C10.498 16.1426 8.85742 14.5068 8.85742 12.4951C8.85742 10.4834 10.4932 8.84766 12.5049 8.84766C14.5166 8.84766 16.1523 10.4834 16.1523 12.4951C16.1523 14.5068 14.5117 16.1426 12.5049 16.1426ZM19.6533 6.65527C19.6533 7.38281 19.0674 7.96387 18.3447 7.96387C17.6172 7.96387 17.0361 7.37793 17.0361 6.65527C17.0361 5.93262 17.6221 5.34668 18.3447 5.34668C19.0674 5.34668 19.6533 5.93262 19.6533 6.65527ZM23.3691 7.9834C23.2861 6.23047 22.8857 4.67773 21.6016 3.39844C20.3223 2.11914 18.7695 1.71875 17.0166 1.63086C15.21 1.52832 9.79492 1.52832 7.98828 1.63086C6.24023 1.71387 4.6875 2.11426 3.40332 3.39355C2.11914 4.67285 1.72363 6.22559 1.63574 7.97852C1.5332 9.78516 1.5332 15.2002 1.63574 17.0068C1.71875 18.7598 2.11914 20.3125 3.40332 21.5918C4.6875 22.8711 6.23535 23.2715 7.98828 23.3594C9.79492 23.4619 15.21 23.4619 17.0166 23.3594C18.7695 23.2764 20.3223 22.876 21.6016 21.5918C22.8809 20.3125 23.2812 18.7598 23.3691 17.0068C23.4717 15.2002 23.4717 9.79004 23.3691 7.9834ZM21.0352 18.9453C20.6543 19.9023 19.917 20.6396 18.9551 21.0254C17.5146 21.5967 14.0967 21.4648 12.5049 21.4648C10.9131 21.4648 7.49023 21.5918 6.05469 21.0254C5.09766 20.6445 4.36035 19.9072 3.97461 18.9453C3.40332 17.5049 3.53516 14.0869 3.53516 12.4951C3.53516 10.9033 3.4082 7.48047 3.97461 6.04492C4.35547 5.08789 5.09277 4.35059 6.05469 3.96484C7.49512 3.39355 10.9131 3.52539 12.5049 3.52539C14.0967 3.52539 17.5195 3.39844 18.9551 3.96484C19.9121 4.3457 20.6494 5.08301 21.0352 6.04492C21.6064 7.48535 21.4746 10.9033 21.4746 12.4951C21.4746 14.0869 21.6064 17.5098 21.0352 18.9453Z" fill="white" fill-opacity="0.5"/>
+                      </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__zarror">Created by <span>Zarror</span> | All Right Reserved!</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- slick slider -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- Файл js -->
+<script src="js/main.js"></script>
+
+</html>

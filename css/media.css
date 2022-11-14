@@ -1,0 +1,357 @@
+@media(max-width:1130px){
+	.container{
+		max-width: 900px;
+	}
+	.gradient{
+		font-size: 18px;
+	}
+	.search__input{
+		width: 260px;
+		padding: 13px 13px 13px 40px;
+		font-size: 14px;
+	}
+	.header__nav-list{
+		gap: 20px;
+	}
+	.header__nav-link{
+		font-size: 16px;
+	}
+	.creative__nft {
+		flex-basis: 450px;
+	}
+	.creative__title {
+		font-size: 43px;
+	}
+	.creative__text, .creative__btn-gradient, .creative__btn, .creative__row-item, .about__header-subtitle, .about__desc-text, .about__desc-btn-gradient, .faq__item-btn {
+		font-size: 18px;
+	}
+	.creative__row {
+		gap: 40px;
+	}
+	.creative__row-item span {
+		font-size: 26px;
+	}
+	.creative__image {
+		flex-basis: calc(100% - 450px - 30px);
+	}
+	.company__logo{
+		height: 52px;
+	}
+	.about__img-box {
+		flex-basis: calc(100% - 500px - 50px);
+	}
+	.about__header-title{
+		font-size: 36px;
+	}
+	.about__body-desc {
+		flex-basis: 500px;
+	}
+	.about__desc-title {
+		font-size: 28px;
+	}
+	.artworks__card-item{
+		padding: 15px;
+	}
+	.artworks__item-image{
+		height: 300px;
+	}
+	.artworks__item-ima{
+		height: 300px;
+	}
+	.card__name, .card__author, .card__price span{
+		font-size: 16px;
+	}
+	.faq__item-content{
+		padding: 0;
+	}
+}
+@media(max-width:880px){
+	.container{
+		max-width: 750px;
+	}
+	.header__logo{
+		margin-right: 10px;
+	}
+	.header__mob-btn{
+		display: block;
+	}
+	.search, .header__nav-list{
+		display: none;
+	}
+	.burger, .header__search{
+		display: block;
+	}
+	.header__mob-btn{
+		display: block;
+	}
+
+	
+	.search__form {
+		display: block;
+		width: 100%;
+		overflow: hidden;
+		position: relative;  
+		padding-right: 40px;
+	}
+	
+	.search__label {
+		position: absolute;
+		background: url(../images/search.svg) 100% / 100% no-repeat;
+		cursor: pointer;
+		width: 20px;
+		height: 20px;
+		right: 50px;
+		top: calc(50% - 12px);
+		padding: 5px;
+	}
+	
+	.search__input {
+		width: 0px;
+		opacity: 0;
+		float: right;
+		height: 35px;
+		transition: all .3s ease-in-out;
+		padding: 13px 30px 13px 13px;
+	}
+	
+	.search__input.show {
+		width: 100%;
+		opacity: 1;
+	}
+
+
+    .burger {
+		display: block;
+		position: fixed;
+		top: 13px;
+		right: 10px;
+		height: 50px;
+		width: 50px;
+		z-index: 9999999;
+		cursor: pointer;
+		box-sizing: content-box;
+	}
+	
+	
+	.burger span {
+		display: block;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 27px;
+		height: 3px;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 13px;
+		transition-duration: .4s;
+	}
+	
+	.burger span:nth-child(1) {
+		top: 15px;
+	}
+	.burger span:nth-child(2) {
+		top: 23px;
+	}
+	.burger span:nth-child(3) {
+		bottom: 16px;
+	}
+	.burger.actives span:nth-child(1) {
+		background-color: #fff;
+		transform: translate(-15px, 8px) rotate(-45deg);
+	}
+	.burger.actives span:nth-child(2) {
+		transition-duration: 0s;
+		opacity: 0;
+	}
+	.burger.actives span:nth-child(3) {
+		background-color: #fff;
+		transform: translate(-15px, -8px) rotate(45deg);
+	}
+	.header__nav {
+		display: block;
+		position: fixed;
+		bottom: 15px;
+		right: 15px;
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		z-index: 9999990;
+		transition-duration: .4s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+	}
+	.header__nav.open {
+		background-color: rgba(0, 0, 0, 0.9);
+		width: 100vw;
+		height: 100vh;
+		right: 0px;
+		bottom: 0px;
+		border-radius: 0;
+	}
+	.header__nav-list {
+		display: none;
+	}
+	.header__nav-list.show {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.header__nav-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: transparent;
+		width: 100%;
+		opacity: 0;
+		animation-name: fadein;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+	.header__nav-item:not(:last-child) {
+		margin-bottom: 22px;
+	}
+	.header__nav-link {
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		text-decoration: none;
+		color: #fff;
+	}
+	@keyframes fadein {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	
+	.creative__inner{
+		position: relative;
+	}
+	.creative__image{
+		position: absolute;
+		flex-basis: inherit;
+		max-width: 33vw;
+		right: 0;
+		bottom: 0;
+	}
+	.company__logo{
+		height: 5.5vw;
+	}
+	.about__img-box{
+		flex-basis: calc(100% - 250px - 50px);
+		margin-right: 15px;
+	}
+	.about__img{
+		width: 100%;
+	}
+	.artworks__item-image, .artworks__item-ima{
+		height: 30vw;
+	}
+
+	.artworks__card-info{
+		flex-direction: column;
+	}
+	.artworks__card-user{
+		text-align: center;
+	}
+	.card__price{
+		margin-top: 15px;
+		text-align: center;
+	}
+	.baner__title{
+		font-size: 30px;
+	}
+	.footer__top-inner{
+	flex-wrap: wrap;
+    justify-content: flex-start;
+	}
+	.footer__top-column:first-child{
+	flex-basis: 100%;
+	max-width: none;
+	margin-bottom: 30px;
+	}
+
+
+
+}
+@media(max-width:650px){
+	.swiper__wrapper{
+		margin-bottom: 10px;
+	}
+	.swiper__slide{
+		flex-basis: inherit;
+	}
+	.creative__image{
+		display: none;
+	}
+	.company{
+		justify-content: center;
+	}
+	.company__logo{
+		margin: 10px 10px;
+		height: 5vw;
+	}
+	.about__body{
+		flex-direction: column;
+	}
+	.about__img-box{
+		margin: 20px auto;
+	}
+	.artworks__card{
+		flex-direction: column;
+		max-width: 390px;
+		margin: 30px auto 50px;
+	}
+	.artworks__card-item{
+		margin-bottom: 30px;
+	}
+	.artworks__item-image, .artworks__item-ima{
+		height: 80vw;
+	}
+	.faq__body{
+		margin: 0 auto;
+		max-width: 400px;
+		flex-direction: column;
+	}
+}
+@media(max-width:500px){
+	.creative__inner{
+		margin-bottom: 85px;
+	}
+	.main__creative {
+		padding-bottom: 75px;
+	}
+	.main__about {
+		padding-bottom: 80px;
+	}
+	.main__artworks {
+		padding-bottom: 70px;
+	}
+	.main__faq{
+		padding-bottom: 80px;
+	}
+}
+@media(max-width:450px){
+	.creative__title{
+		font-size: 36px;
+	}
+}
+@media(max-width:350px){
+	.creative__title{
+		font-size: 31px;
+	}
+	.creative__text{
+		font-size: 17px;
+	}
+	.creative__row{
+		gap: 25px;
+	}
+	.company__logo{
+		height: 5.5vw;
+	}
+}
